@@ -231,7 +231,7 @@ int main(int iArgc, char **cArgv)
                 print_usage(true);
                 exit(0);
             case '?':
-				tmtool_log(LOG_COMMON, "unknow option: %c", optopt);
+				tool_log(LOG_COMMON, "unknow option: %c", optopt);
 				break;
             default:
                 print_usage(true);
@@ -271,7 +271,7 @@ int main(int iArgc, char **cArgv)
 		iRes = nNetWork.getBoardInformation(pcBoardConfig, pcBoardName); //获取板子信息，ddr内存等，要保存数据到ps还是pl，最大可用内存等等。
 		if (iRes < 0)
 		{
-			tmtool_log(LOG_ERROR, "Board Information Error!");
+			tool_log(LOG_ERROR, "Board Information Error!");
 			return -1;
 		}
 		//load param file and bin file
@@ -283,23 +283,23 @@ int main(int iArgc, char **cArgv)
 		nNetWork.printConstruct();
 		nNetWork.printAllDDRInfo();
 
-		tmtool_log(LOG_COMMON, "Translate ncnn model into TrueMicro model successfully!\n");
+		tool_log(LOG_COMMON, "Translate ncnn model into FPGA model successfully!\n");
 
 		if (!memcmp(pcArchType, X86, sizeof(X86)))
 		{
-			status = system("objcopy -I binary -O elf64-x86-64 -B i386 tmmodel.bin tmmodel.elf");
+			status = system("objcopy -I binary -O elf64-x86-64 -B i386 model.bin tmmodel.elf");
 		}
 		else if (!memcmp(pcArchType, RK, sizeof(RK)))
 		{
-			status = system("aarch64-linux-gnu-objcopy -I binary -O elf64-littleaarch64 -B aarch64 tmmodel.bin tmmodel.elf");
+			status = system("aarch64-linux-gnu-objcopy -I binary -O elf64-littleaarch64 -B aarch64 model.bin model.elf");
 		}
 		else if (!memcmp(pcArchType, ZYNQ, sizeof(ZYNQ)))
 		{
-			status = system("arm-linux-gnueabihf-objcopy -I binary -O elf32-littlearm -B arm tmmodel.bin tmmodel.elf");
+			status = system("arm-linux-gnueabihf-objcopy -I binary -O elf32-littlearm -B arm tmmodel.bin model.elf");
 		}
 		else
 		{
-			tmtool_log(LOG_ERROR, "do not support this arch type!");
+			tool_log(LOG_ERROR, "do not support this arch type!");
 		}
 	}
 
