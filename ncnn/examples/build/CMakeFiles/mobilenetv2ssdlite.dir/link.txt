@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mobilenetv2ssdlite.dir/mobilenetv2ssdlite.o  -o mobilenetv2ssdlite -lncnn /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9 

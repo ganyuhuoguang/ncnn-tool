@@ -1,0 +1,12 @@
+/home/true15/ncnn/examples/build/CMakeFiles/rebuild_cache.dir
+/home/true15/ncnn/examples/build/CMakeFiles/edit_cache.dir
+/home/true15/ncnn/examples/build/CMakeFiles/fasterrcnn.dir
+/home/true15/ncnn/examples/build/CMakeFiles/rfcn.dir
+/home/true15/ncnn/examples/build/CMakeFiles/squeezenet.dir
+/home/true15/ncnn/examples/build/CMakeFiles/squeezenetssd.dir
+/home/true15/ncnn/examples/build/CMakeFiles/yolov2.dir
+/home/true15/ncnn/examples/build/CMakeFiles/mobilenetssd.dir
+/home/true15/ncnn/examples/build/CMakeFiles/mobilenetv2ssdlite.dir
+/home/true15/ncnn/examples/build/CMakeFiles/shufflenetv2.dir
+/home/true15/ncnn/examples/build/CMakeFiles/yolov3.dir
+/home/true15/ncnn/examples/build/CMakeFiles/peleenetssd_seg.dir

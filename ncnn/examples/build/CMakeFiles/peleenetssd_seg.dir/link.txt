@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/peleenetssd_seg.dir/peleenetssd_seg.o  -o peleenetssd_seg -lncnn /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9 /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9 

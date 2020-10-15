@@ -1,0 +1,20 @@
+==== caffe convert & quantize tool ====
+prepare your model for int8 inference.
+
+# use before installed follow packages to defalut python:
+argparse
+numpy
+scipy
+caffe
+protobuf
+
+# param
+--struct: file		   # prototxt
+--weights: file		   # caffemodel
+--mean: float,float,float  # preprocess
+--norm: float (option)     # process without normalize if this param not exist.
+--images: dir 		   # images directory
+--gpu: 0 or 1 (option) 	   # using cpu to process if this param not exist.
+
+# example
+python toolkit_caffe.py --struct vgg16.prototxt --weights vgg16.caffemodel --mean 104,117,123 --images some_images/ --gpu = 1

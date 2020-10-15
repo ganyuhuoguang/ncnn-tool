@@ -1,0 +1,3 @@
+/media/true15/DATA/mydocument/tm-tool-mm/transformation/onnx2ncnn/build/CMakeFiles/edit_cache.dir
+/media/true15/DATA/mydocument/tm-tool-mm/transformation/onnx2ncnn/build/CMakeFiles/rebuild_cache.dir
+/media/true15/DATA/mydocument/tm-tool-mm/transformation/onnx2ncnn/build/CMakeFiles/onnx2ncnn.dir

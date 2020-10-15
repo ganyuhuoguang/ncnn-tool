@@ -1,2 +1,11 @@
-# ncnn-tool
-a tool base on ncnn for models deploy on FPGA.
+
+out: execute file
+
+models: input models and output models
+
+
+transformation: models transformation src
+
+run command in /models/README.md
+
+
