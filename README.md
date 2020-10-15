@@ -1,3 +1,4 @@
+An SDK tool for converting ncnn model to FPGA operational model
 
 out: execute file
 
